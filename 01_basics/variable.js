@@ -11,5 +11,5 @@ var keyword should not be use due to block scope
 
 console.log(id)
 console.log(name);
-console.table([id,age,name,state])
+console.table([id,age,name,state]);
 
