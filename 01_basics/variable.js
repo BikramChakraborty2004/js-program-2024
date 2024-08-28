@@ -1,7 +1,7 @@
 const id = 987;
 let age = 18;
 var name = "Bikram";
-state = "student";
+state = "student"
 
 // id=900  // const variable data must not be change
 
