@@ -1,0 +1,58 @@
+// DOM Represent a document with a logical tree (Hierarchial Tree)
+// It allows us to manipulate/ Change webpage content (HTML elements)
+// Window obejct is always available in js. It is in built object
+// In where html is present, document object is present 
+
+/*
+----------------------------------------------
+document.innerText = DISPLAY ONLY WHICH IS DISPLAYED ON THE BROWSER title.innerText
+>> 'DOM learning on Chai aur code'
+----------------------------------------------------------------
+document.textContent = Return all the content including which are hidden
+title.textContent
+>> 'DOM learning on Chai aur code test text'
+-----------------------------------------------------------
+document.innerHTML = it returns inner text with html tags if present title.innerHTML
+>> 'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+--------------------------------------------------
+*/
+
+
+/* PRACTICAL 
+===============
+ document.getElementById('title') // It returns the object
+>> <h1 id=​"title" class=​"heading">​"DOM learning on Chai aur code "<span style=​"display:​ none;​">​test text​</span>​</h1>​
+
+ document.getElementById("title").class
+>> undefined
+
+document.getElementById("title").className
+>> 'heading'
+
+ document.getElementById("title").getAttribute
+>> ƒ getAttribute() { [native code] }
+
+ document.getElementById("title").getAttribute('id')
+>> 'title'
+
+ document.getElementById("title").setAttribute('class','test')
+>> undefined
+
+ document.getElementById("title")
+>> <h1 id=​"title" class=​"test">​"DOM learning on Chai aur code "<span style=​"display:​ none;​">​test text​</span>​</h1>​
+
+ title.style.backgroundColor='green'
+>> 'green'
+
+ title.style.padding='15px'
+>> '15px'
+
+ title.style.padding='8px'
+>> '8px'
+
+ title
+>> <h1 id=​"title" class=​"heading" style=​"background-color:​ green;​ padding:​ 8px;​">​…​</h1>​
+
+// const title = document.getElementById('title')
+
+*/

@@ -1,0 +1,39 @@
+document.querySelector("h2")  // it returns only 1st h2 tag as object
+>>  <h2>1st h2 Lorem ipsum dolor sit.</h2>
+
+document.querySelector("#title")  // For id selector
+>> <h1 id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+
+document.querySelector(".title")  // For class selector
+
+
+document.querySelector('input[type="password"]') // for input type
+<input type="password" name="" id="">
+
+
+document.querySelector("ul").querySelector("li").style.color='red'
+one red ho jayega
+
+document.querySelector("ul").querySelector("li")
+>> select 1st li == one
+
+document.querySelector("ul").querySelector("li").innerText="five"
+>> 'five'
+
+// querySelector return one object 
+// querySelectorAll return html nodelist of object
+
+const tempLiList = document.querySelectorAll("li")
+>> return html nodelist  (it is like array)
+ 
+tempLiList[0].style.color="red"    // tempLiList.style.color="red"  error
+>> 'red'  index 0 html nodelist will be red
+
+const tempClassList = document.getElementsByClassName("list-item")
+// return HTML collection  It should be converted into array using 
+// const arr = Array.from(tempClassList)
+// in array we can use forEach
+arr.forEach(function (li){
+    li.style.color = "orange"
+})
+ 
